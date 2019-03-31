@@ -10,3 +10,7 @@ npm i -S afeiship/rake-finxos-editor-frontend --registry=https://registry.npm.ta
 ~~~
 rake -T
 ~~~
+
+
+## reference
+- https://rubyplus.com/articles/601-SSH-Kit-Gem-Part-2
