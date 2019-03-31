@@ -1,0 +1,17 @@
+{
+  "name": "rake-finxos-editor-frontend",
+  "version": "1.0.0",
+  "description": "Rake for editor-frontend.",
+  "main": "index.rake",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afeiship/rake-finxos-editor-frontend.git"
+  },
+  "keywords": ["rake", "task"],
+  "author": "afei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afeiship/rake-finxos-editor-frontend/issues"
+  },
+  "homepage": "https://github.com/afeiship/rake-finxos-editor-frontend#readme"
+}

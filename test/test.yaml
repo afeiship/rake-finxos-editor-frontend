@@ -1,0 +1,10 @@
+
+sshkit_config:
+  output_verbosity: :debug
+  format: :pretty
+ssh_options:
+  user: fzheng
+  auth_methods: publickey
+host: 0.0.0.0
+dirs:
+  remote: /home/fzheng/
