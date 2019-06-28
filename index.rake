@@ -13,8 +13,13 @@ namespace :app do
   end
 
   desc "Package dist file."
-  task :pack do |task, args|
-    version = pkg["version"]
-    sh "tar zcf dist-#{version}.tar.gz dist"
+  task :pack, [:version, :dist] do |task, args|
+    args.with_defaults(
+      version: pkg["version"],
+      dist: "dist",
+    )
+    dist = args[:dist]
+    sh "rm -rf *.tar.gz"
+    sh "tar zcf #{dist}-#{args[:version]}.tar.gz #{dist}"
   end
 end
