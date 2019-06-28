@@ -9,12 +9,12 @@ namespace :app do
     args.with_defaults(
       env: "test",
     )
-    puts "npm run #{args[:env]}"
+    sh "npm run #{args[:env]}"
   end
 
   desc "Package dist file."
   task :pack do |task, args|
     version = pkg["version"]
-    puts "tar zcf dist-#{version}.tar.gz dist"
+    sh "tar zcf dist-#{version}.tar.gz dist"
   end
 end
