@@ -23,8 +23,8 @@ namespace :app do
     sh "tar zcf #{dist}-#{args[:version]}.tar.gz #{dist}"
   end
 
-  desc "Sync iconfonts."
-  task :icons, [:url, :filename] do |task, args|
+  desc "Sync latest iconfonts."
+  task :icons do |task, args|
     sh "rm -rf node_modules/finxos-icons-editor-frontend"
     sh "npm install"
   end
