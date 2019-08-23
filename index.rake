@@ -25,11 +25,7 @@ namespace :app do
 
   desc "Sync iconfonts."
   task :icons, [:url, :filename] do |task, args|
-    args.with_defaults(
-      :url => "default",
-      :filename => "./src/assets/styles/icons-editor.scss",
-    )
-
-    Rake::Task["iconfont:sync_css"].invoke(args[:url], args[:filename])
+    sh "rm -rf node_modules/finxos-icons-editor-frontend"
+    sh "npm install"
   end
 end
