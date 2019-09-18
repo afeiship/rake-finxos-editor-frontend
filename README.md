@@ -8,8 +8,12 @@ npm i -S afeiship/rake-finxos-editor-frontend --registry=https://registry.npm.ta
 
 ## usage:
 ~~~
-rake app:build[env]  # Build app
-rake app:pack        # Package dist file
+rake app:build[env]          # Build app
+rake app:icons               # Sync latest iconfonts
+rake app:mixin               # Create mixin
+rake app:pack[version,dist]  # Package dist file
+rake app:service             # Create service
+rake app:view                # Create view
 ~~~
 
 
